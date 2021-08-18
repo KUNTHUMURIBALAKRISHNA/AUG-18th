@@ -1,0 +1,14 @@
+#include <stdio.h>
+# define BITS sizeof(int)*8
+int main()
+{
+    int n,MSB;
+    MSB=1<<(BITS-1);
+    printf("enter a number:\n");
+    scanf("%d",&n);
+    if(n&MSB)
+    printf("MSB of %d is set(1)",n);
+    else
+    printf("MSB of %d  is set(0)",n);
+    return 0;
+}
